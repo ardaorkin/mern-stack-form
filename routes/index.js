@@ -18,7 +18,9 @@ router.post("/", async (req, res, next) => {
   })
     .save()
     .then(() => {
-      return res.render("App");
+      return res.render("App", {
+        successMessage: "User successfully created!",
+      });
     })
     .catch((err) => {
       if (err.errors) {

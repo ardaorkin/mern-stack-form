@@ -29,10 +29,13 @@ const App = (props) => {
       >
         <Card.Body>
           {props.messages
-            ? props.messages.map((idx, message) => {
-                return <FormAlert key={message} message={idx} />;
+            ? props.messages.map((message, idx) => {
+                return <FormAlert key={idx} message={message} />;
               })
             : null}
+          {props.successMessage ? (
+            <FormAlert successMessage={props.successMessage} />
+          ) : null}
           <Form method="POST">
             <Form.Group>
               <Row>
