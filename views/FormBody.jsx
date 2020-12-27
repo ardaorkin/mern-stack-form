@@ -83,6 +83,7 @@ const FormBody = (props) => {
                 onChange={(event) => params.handleChange(event)}
                 required
                 style={{
+                  color: "white",
                   background:
                     "linear-gradient(90deg, rgba(80, 80, 80, 0.5) 0%, rgba(40, 40, 40, 0.5) 30%, rgba(15, 15, 15, 0.5) 100%)",
                 }}
