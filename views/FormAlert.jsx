@@ -3,7 +3,7 @@ const { Alert } = require("react-bootstrap");
 
 const FormAlert = (props) => {
   return props.message ? (
-    <Alert key={props.key} variant="danger">
+    <Alert key={props.keyId} variant="danger">
       {props.message}
     </Alert>
   ) : props.successMessage ? (
